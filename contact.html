@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Nature</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #626262;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a.active{
+            background-color: #111;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contacts</h1>      
+        
+            <ul>
+                <li><a href="mini project 1 (EEI3346).html"class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="issues.html">Issues</a></li>
+                <li><a href="sollutions.html">Sollutions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        
+    </header>
+    <br><br><br>
+    <div id="app" class="container">
+        <h1>Feedback</h1>
+        <div class="comment-form">
+          <input type="text" v-model="newComment" placeholder="Enter your comment">
+          <button @click="addComment">Add Comment</button>
+        </div>
+        <ul class="comment-list">
+          <li v-for="comment in comments" class="comment-item">{{ comment }}</li>
+        </ul>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <script src="contact.js"></script> 
+    <footer>
+        <p>&copy;Green nature</p>
+    </footer>
+</body>  
+</html>

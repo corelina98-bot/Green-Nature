@@ -1,0 +1,78 @@
+body{
+    background-image: url("theme.jpeg");
+    background-repeat: repeat-y;
+    
+}
+
+header {
+    background-color: #79d071;
+    opacity: 0.9;
+    color: purple;
+    padding: 5px; 
+    text-align: center;
+    font-family:cursive;
+    font-size:30px;
+
+}
+
+
+footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    padding: 3px;
+    background-color: rgb(34, 149, 72);
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+h2{
+    color: #554528;
+    text-align: center;
+    
+}
+
+h2 {
+    display: block;
+    font-size: 35px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin:auto;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.fixed {
+    color: white;
+    background-color: #009966;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index:3;
+    font-size:25px;
+}
